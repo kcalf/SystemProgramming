@@ -9,7 +9,7 @@ int read_command(); // 사용자의 Pager 명령 입력 처리
 int main(int argc, char *argv[]){
   FILE *source = stdin;
 
-  if(argc > 1){
+  if(argc > 1){ // 첫 번째 인자 파일만 사용됨 (간략화)
     source = fopen(argv[1], "r");
 
     if(source == NULL){
