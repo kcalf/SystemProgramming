@@ -60,7 +60,7 @@ int read_command(FILE *command_stream)
 {
     int cmd;
 
-    printf("\033[7m next? \033[0m");
+    printf("\033[7m more? \033[0m");
     fflush(stdout);
 
     while ((cmd = getc(command_stream)) != EOF) {
